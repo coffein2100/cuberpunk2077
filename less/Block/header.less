@@ -13,6 +13,10 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      padding-top: 30px;
+    }
   }
   .header__logocuber{
     width: 200px;
@@ -28,8 +32,15 @@
     padding: 0;
     list-style-type: none;
     flex-wrap: wrap;
+    @media (min-width: @desktop-width) {
+      width: 360px;
+    }
   }
   .header__logosocial{
     width: 25px;
     height: 25px;
+    @media (min-width: @desktop-width) {
+      width: 30px;
+      height: 30px;
+    }
   }

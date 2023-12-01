@@ -1,6 +1,12 @@
 .container{
     margin: 0 auto;
     max-width: 296px;
+    @media (min-width: @desktop-width) {
+        max-width: 952px;
+      }
+      @media (min-width: @longdesktop-width) {
+        max-width: 1280px;
+      }
 }
 html, body {
     font-family: "Roboto", sans-serif;
@@ -10,6 +16,8 @@ html, body {
     display: block;
 }
 @imagePath: ~"../img/";
+@desktop-width: 1024px;
+@longdesktop-width: 1920px;
 
 @import "Block/header.less";
 @import "Block/hero.less";

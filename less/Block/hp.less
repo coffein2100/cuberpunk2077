@@ -7,12 +7,19 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media (min-width: @desktop-width) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
 }
 .hp__left {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .hp__imgleftlist {
     margin: 0;
@@ -23,13 +30,23 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media (min-width: @desktop-width) {
+        flex-direction: column;
+    }
 }
 .hp__imgleftitem {
     margin-bottom: 25px;
+    @media (min-width: @desktop-width) {
+        margin-bottom: 15px; 
+    }
 }
 .hp__imgleftmonitor {
     width: 296px;
     height: 204px;
+    @media (min-width: @desktop-width) {
+        width: 460px;
+        height: 317px;
+    }
 }
 .hp__logohp {
     text-decoration: none;
@@ -37,6 +54,10 @@
 .hp__imglogohp {
     width: 43px;
     height: 44px;
+    @media (min-width: @desktop-width) {
+        width: 80px;
+        height: 80px;
+    }
 }
 .hp__linkcuberpunk {
     text-decoration: none;
@@ -44,6 +65,10 @@
 .hp__imglogocuberpunk {
     width: 175px;
     height: 44px;
+    @media (min-width: @desktop-width) {
+        width: 319.991px;
+        height: 79.448px;
+    }
 }
 .hp__right {
     display: flex;
@@ -60,6 +85,10 @@
     margin-bottom: 25px;
     word-break: break-word;
     padding-right: 5px;
+    @media (min-width: @desktop-width) {
+        font-size: 52px;
+        padding-right: 50px;
+    }
 }
 .hp__textdeskription {
     padding: 0;
@@ -73,6 +102,10 @@
     line-height: 32px;   
     word-break: break-word;
     padding-right: 5px;
+    @media (min-width: @desktop-width) {
+        font-size: 18px;
+        padding-right: 15px;
+    }
 }
 .hp__aboutlist {
     position: relative;
@@ -92,6 +125,9 @@
     line-height: normal;
     word-break: break-word;
     padding-right: 5px;
+    @media (min-width: @desktop-width) {
+        font-size: 18px;
+    }
 }
 .hp__aboutlistitem:nth-child(1)::before {
     position: absolute;
@@ -141,4 +177,7 @@
     margin-bottom: 70px;
     word-break: break-word;
     padding-right: 5px;
+    @media (min-width: @desktop-width) {
+        width: 194px;
+    }
 }
